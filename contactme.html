@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <style>
+            .roundd{
+                border-radius: 50%;
+                border: 10;
+            }
+
+            body, html {
+                height: 100%;
+                margin: 0;
+            }
+
+            .bg {
+                /* The image used */
+                background-image: url("img/up.jpg");
+
+
+                /* Full height */
+                height: 120%; 
+
+                /* Center and scale the image nicely */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .bg1 {
+                /* The image used */
+                background-image: url("img/do.jpg");
+
+
+                /* Full height */
+                height: 120%; 
+
+                /* Center and scale the image nicely */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .hello{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .bttt{
+                position: absolute;
+                top: 50%;
+                left: 60%;
+                
+                transition: transform .2s;
+                transform: translate(-20%, -20%);
+            }
+            .bttt:hover{
+                transform: scale(1.5);
+            }
+            .bttt1{
+                position: absolute;
+                top: 70%;
+                left: 40%;
+                transform: translate(-20%, -20%);
+            }
+
+            .navbar-default .navbar-brand:hover{
+                color: rgba(240, 84, 0, 1);
+                background-color: grey;
+
+            }
+            .navbar-default .navbar-nav>li>a:hover{
+                color: rgba(240, 84, 0, 1);
+            }
+            .navbar-default .navbar-nav>li>a.active-page{
+                color: rgba(240, 84, 0, 1);
+               
+                
+            }
+            .navbar-default .navbar-brand{
+                color: black;
+            }
+            .navbar-default .navbar-nav>li>a{
+                color: black;
+            }
+            .navbar-default{
+                background-color: rgba(236, 233, 228, 1);
+                border: 0;
+                height: 50;
+
+            }
+            .text-justify {
+                text-align: justify;
+            }
+            .bfont{
+                padding-top: 20;
+                font-size:30px; 
+            }
+            
+            .newf{
+                font-family: 'Leckerli One', cursive;
+            }
+            .greybg{
+                background-color: rgba(236, 233, 228, 1);
+            }
+            .foot{
+                position: absolute;
+                top: 120%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body class='newf'>
+
+
+        <div class="navbar navbar-default "> 
+            <div class="container"> 
+
+                <div class="navbar-header"> 
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button> 
+                    <a class="navbar-brand" href="index.html"> <img src="img/mylogo.png" width="100" height="100"></a> 
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar"> 
+                    <ul class="nav navbar-nav"> 
+
+                        <li><a href="index.html" class="bfont"><span class=""></span> About</a></li>
+                        <li><a href="#" class="bfont active-page"><span class=""></span> Contact Me</a></li>
+                        <li><a href="projects.html" class="bfont"><span class=""></span> Projects</a></li>
+
+                    </ul> 
+                </div> 
+            </div> 
+        </div>
+
+        <div class="bg">
+            <center>
+                <div class="hello">
+
+                    <br>
+                    <h1>Contact Me: </h1><br>
+                    <h4></h4>
+                </div>
+
+                <div class="">
+                    <div class="bttt1 text-justify col-sm-6 col-md-7">
+
+
+                        <form action="mailto:razzz.rai00@gmail.com" method="post" enctype="text/plain">
+                            Name:<br>
+                            <input type="text" name="name"><br>
+                            E-mail:<br>
+                            <input type="text" name="mail"><br>
+                            Comment:<br>
+                            <input type="text" name="comment" size="50"><br><br>
+                            <input type="submit" value="Send">
+                            <input type="reset" value="Reset">
+                        </form>
+                    </div>
+                </div>
+                <div class="bttt col-sm-6 col-md-4">
+
+                    <br>
+                    <img class="roundd" src="img/raja.png" width="250" height="250"></a> 
+                </div>
+                <footer> 
+                    <div class="gap2 container col-sm-12 foot"> 
+                        <center> 
+                            <hr>
+                            <p>&copy; Raja Rai | All Rights Reserved </p> 
+                            <hr>
+                        </center> 
+                    </div> 
+                </footer>
+            </center>
+        </div>
+        <div>
+
+        </div>
+
+
+        <p>
+
+        </p>
+
+    </body>
+</html>
