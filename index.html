@@ -1,276 +1,125 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-        <!--jQuery library--> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!--Latest compiled and minified JavaScript--> 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        <style>
-            .roundd{
-                border-radius: 50%;
-                border: 10;
-            }
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-            body, html {
-                height: 100%;
-                margin: 0;
-            }
-
-            .bg {
-                /* The image used */
-                background-image: url("img/up.jpg");
+<body class='font-pangolin'>
 
 
-                /* Full height */
-                height: 120%; 
+    <div class="navbar navbar-default ">
+        <div class="container">
 
-                /* Center and scale the image nicely */
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"> <img src="img/mylogo.png" width="100" height="100"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
 
-            .bg1 {
-                /* The image used */
-                background-image: url("img/do.jpg");
+                    <li><a href="index.html" class="bfont active-page"><span class=""></span> About</a></li>
+                    <li><a href="contactme.html" class="bfont"><span class=""></span> Contact Me</a></li>
+                    <li><a href="projects.html" class="bfont"><span class=""></span> Projects</a></li>
 
-
-                /* Full height */
-                height: 120%; 
-
-                /* Center and scale the image nicely */
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            .hello{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-
-            .bttt{
-                position: absolute;
-                top: 80%;
-                left: 80%;
-                transform: translate(-50%, -50%);
-            }
-            .bttt1{
-                position: absolute;
-                top: 80%;
-                left: 20%;
-                transform: translate(-20%, -20%);
-            }
-
-            .navbar-default .navbar-brand:hover{
-                color: rgba(240, 84, 0, 1);
-                
-                transform: scale(1.5); 
-
-            }
-            .navbar-default .navbar-nav>li>a:hover{
-                color: rgba(240, 84, 0, 1);
-            }
-             .navbar-default .navbar-nav>li>a.active-page{
-                color: rgba(240, 84, 0, 1);
-            }
-            .navbar-default .navbar-brand{
-                color: black;
-                transition: transform .2s;
-            }
-            .navbar-default .navbar-nav>li>a{
-                color: black;
-            }
-            .navbar-default{
-                background-color: rgba(236, 233, 228, 1);
-                border: 0;
-                height: 50;
-
-            }
-            .text-justify {
-                text-align: justify;
-            }
-            .bfont{
-                padding-top: 20;
-                font-size:30px; 
-            }
-            .can{
-                position: absolute;
-                top: 120%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-            .wat{
-                position: absolute;
-                top: 140%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-
-            .webdev{
-                position: absolute;
-                top: 160%;
-                left: 55%;
-                transform: translate(-50%, -50%);
-            }
-            .webdev1{
-                position: absolute;
-                top: 160%;
-                left: 25%;
-                transform: translate(-50%, -50%);
-            }
-            .java{
-                position: absolute;
-                top: 180%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-            .java1{
-                position: absolute;
-                top: 180%;
-                left: 20%;
-                transform: translate(-50%, -50%);
-            }
-            .newf{
-                font-family: 'Pangolin', cursive;
-            }
-            .greybg{
-                background-color: rgba(236, 233, 228, 1);
-            }
-            .foot{
-                position: absolute;
-                top: 205%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-
-            .zoom {
-                padding: 50px;
-                
-                transition: transform .2s; /* Animation */
-                width: 200px;
-                height: 200px;
-                margin: 0 auto;
-            }
-
-            .zoom:hover {
-                transform: scale(1.5); 
-            }
-            
-        </style>
-    </head>
-    <body class='newf'>
-
-
-        <div class="navbar navbar-default "> 
-            <div class="container"> 
-
-                <div class="navbar-header"> 
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
-                        <span class="icon-bar"></span> 
-                        <span class="icon-bar"></span> 
-                        <span class="icon-bar"></span> 
-                    </button> 
-                    <a class="navbar-brand" href="#"> <img src="img/mylogo.png" width="100" height="100"></a> 
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar"> 
-                    <ul class="nav navbar-nav"> 
-
-                        <li><a href="index.html" class="bfont active-page"><span class=""></span> About</a></li>
-                        <li><a href="contactme.html" class="bfont"><span class=""></span> Contact Me</a></li>
-                        <li><a href="projects.html" class="bfont"><span class=""></span> Projects</a></li>
-
-                    </ul> 
-                </div> 
-            </div> 
+                </ul>
+            </div>
         </div>
+    </div>
 
-        <div class="bg">
-            <center>
-                <div class="hello">
+    <div class="bg">
+        <center>
+            <div class="hello">
 
-                    <br>
-                    <h1>Hello, I am Raja </h1><br>
-                    <h4>A web developer and progammer.</h4>
+                <br>
+                <h1>Hello, I am Raja </h1><br>
+                <h4>A web developer and progammer.</h4>
+            </div>
+
+            <div class="">
+                <div class="bttt1 text-justify col-sm-6 col-md-7">
+
+                    <h2>Hi, I am a web developer and programmer. I have a passion for web design and love to create for
+                        web and Java application.</h2>
                 </div>
+            </div>
+            <div class="bttt col-sm-6 col-md-4">
 
+                <br>
+                <img class="roundd " src="img/raja.png" width="300" height="300"></a>
+            </div>
+
+        </center>
+    </div>
+    <div>
+
+    </div>
+    <div class="bg1">
+        <center>
+            <div class="dot">
+
+                <img class="" src="img/dot.png" width="50" height="25"></a>
+            </div>
+            <div class="skills">
+
+
+                <h1>What are my skills.</h1>
+
+            </div>
+            <div class="webdev1">
+                <img src="img/webdev1.png" height="100" width="100" class="zoom">
+            </div>
+            <div class="webdev col-sm-6">
+                <h2>Web Development.</h2>
+                <h4>I design websites using technologies such as ReactJS, JavaScript, HTML, CSS and Bootstrap .</h4>
                 <div class="">
-                    <div class="bttt1 text-justify col-sm-6 col-md-7">
-
-                        <h2>Hi, I am a web developer and programmer. I have a passion for web design and love to create for web and Java application.</h2>
-                    </div>
+                    <img class="" src="img/dot.png" width="30" height="15"></a>
                 </div>
-                <div class="bttt col-sm-6 col-md-4">
+            </div>
+            <div class="java1">
+                <img src="img/java1.png" height="100" width="100" class="zoom">
+            </div>
+            <div class="java col-sm-6">
 
-                    <br>
-                    <img class="roundd " src="img/raja.png" width="300" height="300"></a> 
+                <h2>Java Programmer.</h2>
+                <h4> I have knowledge of basic Java, some topics like OOPS and learning more concepts like JDBC, JavaFX
+                    , collection framework, etc. .</h4>
+                <div class="">
+
+                    <img class="" src="img/dot.png" width="30" height="15"></a>
                 </div>
+            </div>
 
-            </center>
-        </div>
-        <div>
 
-        </div>
-        <div class="bg1">
-            <center>
-                <div class="can">
-
-                    <img class="" src="img/dot.png" width="50" height="25"></a> 
+            <footer>
+                <div class="gap2 container col-sm-12 foot">
+                    <center>
+                        <hr>
+                        <p>&copy; Raja Rai | All Rights Reserved </p>
+                        <hr>
+                    </center>
                 </div>
-                <div class="wat">
+            </footer>
 
+        </center>
+    </div>
 
-                    <h1>What are my skills.</h1>
+    <p>
 
-                </div>
-                <div class="webdev1">
-                    <img src="img/webdev1.png" height="100" width="100" class="zoom">
-                </div>
-                <div class="webdev col-sm-6">
-                    <h2>Web Development.</h2>
-                    <h4>I design websites using technologies such as HTML, CSS and Bootstrap and use PHP, MySQL for the website's backend needs.</h4>
-                    <div class="">
+    </p>
 
-                        <img class="" src="img/dot.png" width="30" height="15"></a> 
-                    </div>
-                </div>
-                <div class="java1">
-                    <img src="img/java1.png" height="100" width="100" class="zoom">
-                </div>
-                <div class="java col-sm-6">
+</body>
 
-                    <h2>Java Programmer.</h2>
-                    <h4> I have knowledge of basic Java, some topics like OOPS and learning more concepts like JDBC, JavaFX , collection framework, etc. .</h4>
-                    <div class="">
-
-                        <img class="" src="img/dot.png" width="30" height="15"></a> 
-                    </div>
-                </div>
-
-
-                <footer> 
-                    <div class="gap2 container col-sm-12 foot"> 
-                        <center> 
-                            <hr>
-                            <p>&copy; Raja Rai | All Rights Reserved </p> 
-                            <hr>
-                        </center> 
-                    </div> 
-                </footer>
-
-            </center>
-        </div>
-
-        <p>
-
-        </p>
-
-    </body>
 </html>
